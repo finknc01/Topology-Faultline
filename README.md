@@ -2,6 +2,17 @@
 
 > **Case File 07: The Missing Bandwidth — investigate why supposedly identical AI compute nodes behave differently when the hidden hardware topology is not identical at all.**
 
+## Project status
+
+| Field | Current state |
+|---|---|
+| **Status** | **Planned — scheduled in the 52-week roadmap** |
+| **Current stage** | Campaign authored; no case completion or experimental result is claimed yet |
+| **Lab environment** | Real laptop topology first; multi-socket, NVSwitch, SXM, and HCA systems modeled from cited references |
+| **Evidence rule** | Every artifact must be labeled measured, derived, simulated, or modeled/reference |
+| **Last plan sync** | 2026-08-19 |
+| **License** | No open-source license is granted unless an explicit license is added later |
+
 ## Skills you will build
 
 - CPU socket and NUMA fundamentals
