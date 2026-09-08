@@ -4,7 +4,7 @@
 
 ## Lab environment
 
-- **Measured environment:** Real local topology first; use the actual RHEL/Linux host and hardware paths the operating system exposes.
+- **Measured environment:** Real local topology first; use the actual RHEL host and hardware paths the operating system exposes.
 - **Modeled environment:** Multi-socket, SXM, NVLink/NVSwitch, HCA, and other enterprise-only systems are modeled from public references unless actually available.
 - **Evidence rule:** Every artifact must be labeled **measured**, **derived**, **simulated**, or **modeled/reference**.
 
