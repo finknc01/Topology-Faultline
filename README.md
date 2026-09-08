@@ -2,15 +2,11 @@
 
 > **Case File 07: The Missing Bandwidth — explain why systems with similar parts can behave differently when the paths between those parts are different.**
 
-## Project status
+## Lab environment
 
-| Field | Current state |
-|---|---|
-| **Status** | **Planned — scheduled in the 52-week roadmap** |
-| **Current stage** | Casebook authored; no case completion or experimental result is claimed yet |
-| **Lab environment** | Real laptop topology first; multi-socket, SXM, NVLink/NVSwitch, and HCA systems are modeled from public references |
-| **Evidence rule** | Every artifact must be labeled **measured**, **derived**, **simulated**, or **modeled/reference** |
-| **Last plan sync** | 2026-08-19 |
+- **Measured environment:** Real local topology first; use the actual RHEL/Linux host and hardware paths the operating system exposes.
+- **Modeled environment:** Multi-socket, SXM, NVLink/NVSwitch, HCA, and other enterprise-only systems are modeled from public references unless actually available.
+- **Evidence rule:** Every artifact must be labeled **measured**, **derived**, **simulated**, or **modeled/reference**.
 
 ## Purpose
 
@@ -20,7 +16,7 @@ The central question is:
 
 > **What path does the data actually take through the machine, and where can topology make that path expensive?**
 
-The laptop supplies real CPU, PCIe, storage, and GPU-placement evidence where exposed by the operating system. Enterprise-only topologies are reconstructed as clearly labeled models rather than presented as local hardware experience.
+The local system supplies real CPU, PCIe, storage, and GPU-placement evidence where exposed by the operating system. Enterprise-only topologies are reconstructed as clearly labeled models rather than presented as local hardware experience.
 
 ## Skills developed
 
@@ -47,7 +43,7 @@ The files in [`missions/`](missions/) are authoritative.
 
 ## Modeling rule
 
-Do not claim the laptop has multiple sockets, NVSwitch, SXM GPUs, multiple HCAs, or other enterprise features it does not expose. Use official architecture references to model those systems, then explicitly compare the model with the real local topology.
+Do not claim the local system has multiple sockets, NVSwitch, SXM GPUs, multiple HCAs, or other enterprise features it does not expose. Use official architecture references to model those systems, then explicitly compare the model with the real local topology.
 
 Synthetic cases are valuable when the objective is reasoning that cannot be safely or physically reproduced at home. The artifact must say what is synthetic and what evidence would be collected on real hardware.
 
